@@ -16,7 +16,6 @@ body {
     background-size: cover;
     font-family: 'Oswald', Arial;
     color: aliceblue;
-    position: fixed;
 }
 
 ::selection {
@@ -40,11 +39,11 @@ body {
 .container {
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     z-index: 1000;
@@ -57,6 +56,7 @@ body {
     align-items: center;
     flex-direction: column;
     color: aliceblue;
+    margin-top: 40px;
 }
 
 .profile img {
@@ -162,8 +162,6 @@ footer {
     width: 100%;
     font-size: x-small;
     bottom: 0;
-    left: 0;
-    position: fixed;
     padding-bottom: 6px;
     padding-left: 10px;
     font-weight: lighter;
