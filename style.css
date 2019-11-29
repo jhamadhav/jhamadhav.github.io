@@ -16,6 +16,7 @@ body {
     background-size: cover;
     font-family: 'Oswald', Arial;
     color: aliceblue;
+    position: fixed;
 }
 
 ::selection {
