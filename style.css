@@ -131,8 +131,8 @@ h2 {
 
 @media (max-width: 770px) {
     .profile img {
-        height: 150px;
-        width: 150px;
+        height: 140px;
+        width: 140px;
     }
 
     .wrap {
@@ -144,10 +144,6 @@ h2 {
 
     .quote div {
         font-size: xx-large;
-    }
-
-    .quote p {
-        font-size: x-small;
     }
 
     .unit-holder:nth-child(3) {
@@ -166,7 +162,7 @@ footer {
     font-size: x-small;
     bottom: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     padding-bottom: 6px;
     padding-left: 10px;
     font-weight: lighter;
