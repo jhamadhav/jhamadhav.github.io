@@ -1,4 +1,4 @@
- @import './page1';
+ @import './nav', './page1';
 
  * {
      margin: 0;
@@ -10,7 +10,8 @@
      background-color: #fff;
      width: 100vw;
      height: 100vh;
-     overflow-x: hidden;
+     overflow: hidden;
+     font-family: 'Montserrat', sans-serif;
  }
 
  .page {
