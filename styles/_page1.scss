@@ -1,0 +1,22 @@
+@import './variable';
+
+// local variable
+$tile-size:8em;
+
+.bg-p1 {
+    overflow: hidden;
+    width: 140%;
+    height: 100%;
+    background: $violet-gradient;
+}
+
+.tile {
+    width: $tile-size;
+    height: $tile-size;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 1.6em;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    float: left;
+}

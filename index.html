@@ -1,108 +1,71 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="style.css">
-	<link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
-	<title>Madhav Jha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhav Jha | Portfolio</title>
+
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <script src="./scripts/main.js"></script>
 </head>
 
 <body>
-	<!--DARK OVERLAY-->
-	<div class="bg"></div>
-	<div class="overlay"></div>
-	<div class="container">
-
-		<div class="profile">
-			<img src="images\profile-pic.jpg" alt="profile-pic" title="Madhav Jha">
-			<a href="https://github.com/jhamadhav">
-				<h2 title="github/jhamadhav">Madhav Jha</h2>
-			</a>
-		</div>
-
-		<div class="quote">
-			<div>Reaching For <span>The Moon.</span></div>
-			<p>The site is <i>Under Construction !</i> It will be updated soon. <br>
-				Visit later to see <i>new</i> and <i>fresh</i> code.</p>
-		</div>
-
-		<div class="count-down" title="Busy due to exams, site will be Up and Running in :">
-			<div class="unit-holder">
-				<div class="wrap"><span id="day">0</span></div>
-				<span>Days</span>
-			</div>
-			<div class="unit-holder">
-				<div class="wrap"><span id="hour">0</span></div>
-				<span>Hours</span>
-			</div>
-			<div class="unit-holder">
-				<div class="wrap"><span id="min">0</span></div>
-				<span>Minutes</span>
-			</div>
-			<div class="unit-holder">
-				<div class="wrap"><span id="sec">0</span></div>
-				<span>Seconds</span>
-			</div>
-		</div>
-		<footer>
-			For projects & more : Visit <a href="https://github.com/jhamadhav"> <i>&nbsp; Github</i></a>
-			<a href="https://instagram.jhamadhav.com"><i>&nbsp; Instagram </i> </a>
-			<a href="https://twitter.jhamadhav.com"><i>&nbsp; Twitter</i></a>&nbsp; !
-		</footer>
-	</div>
-
-	<script>
-		var today, arrival_day, count_loop, days, hrs, mins, sec;
-
-		window.onload = function () {
-			arrival_day = new Date("FEB 28,2021 00:00:00");
-			// console.log('hello');
-			calc_time();
-
-			count_loop = setInterval(calc_time, 500);
-		}
-
-		// to calculate days,hrs and min
-		function calc_time() {
-
-			//current time
-			today = new Date();
-
-			//difference between dates in seconds;
-			let diff = arrival_day.getTime() - today.getTime();
-			diff /= 1000;
-
-			//days
-			days = Math.floor(diff / (60 * 60 * 24));
-			(days < 100) ? days = '00' + days : days;
-			(days < 10) ? days = '0' + days : days;
-
-			//hours
-			hrs = Math.floor(diff / (60 * 60)) % 24;
-			(hrs < 10) ? hrs = '0' + hrs : hrs;
-
-			//minutes
-			mins = Math.floor(diff / (60)) % 60;
-			(mins < 10) ? mins = '0' + mins : mins;
-
-			//seconds
-			sec = Math.floor(diff % 60);
-			(sec < 10) ? sec = '0' + sec : sec;
-
-			//updating in DOM elements
-			document.getElementById('day').innerText = days;
-			document.getElementById('hour').innerText = hrs;
-			document.getElementById('min').innerText = mins;
-			document.getElementById('sec').innerText = sec;
-
-			if (days == 0 && hrs == 0 && mins == 0 && sec == 0) {
-				clearInterval(count_loop);
-			}
-		}
-	</script>
+    <div class="page" id="page1">
+        <div class="bg-p1">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+    </div>
+    <div class="page" id="page2">
+        <h2>This is page</h2>
+    </div>
 </body>
 
 </html>
