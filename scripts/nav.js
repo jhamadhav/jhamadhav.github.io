@@ -19,7 +19,10 @@ window.onscroll = function () {
     }
     prev = window.pageYOffset;
 };
-
+window.onload = () => {
+    document.addEventListener('swiped-right', menuOpen);
+    document.addEventListener('swiped-left', menuOpen);
+}
 function menuOpen() {
     document.getElementsByClassName("nav-links")[0].classList.toggle("open");
     let page = document.getElementsByClassName("page");
