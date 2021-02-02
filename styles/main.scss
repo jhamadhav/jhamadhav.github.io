@@ -1,0 +1,25 @@
+ @import './nav', './page1';
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: #fff;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ .page {
+     width: 100%;
+     height: 100%;
+     background: #fff;
+ }
+
+ .blur {
+     filter: blur(3px);
+ }
