@@ -22,6 +22,7 @@ window.onscroll = function () {
 
 function menuOpen() {
     document.getElementsByClassName("nav-links")[0].classList.toggle("open");
+    let page = document.getElementsByClassName("page");
     document.getElementsByClassName("burger")[0].classList.toggle("menuAnimate");
 }
 
