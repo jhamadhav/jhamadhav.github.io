@@ -37,7 +37,8 @@
         }
 
         @include mobile {
-            width: 85%;
+            width: 98%;
+            margin-left: 1%;
         }
 
         .project-name {
@@ -99,6 +100,7 @@
                 margin-right: 6px;
                 margin-bottom: 6px;
                 cursor: pointer;
+                color: #fff;
 
                 &:hover {
                     transform: scale(.9);

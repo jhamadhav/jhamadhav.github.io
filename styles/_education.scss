@@ -4,6 +4,8 @@
 
     @include mobile {
         font-size: 3rem;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -37,7 +39,7 @@
 
         @include mobile {
             width: 90%;
-            margin-left: 10px;
+            margin-left: 5%;
         }
 
         .institute-name {
