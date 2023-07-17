@@ -1,9 +1,9 @@
 #project-div {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -17,7 +17,7 @@
 #projects {
 
     .project-card {
-        width: 45%;
+        width: 35%;
         max-width: 400px;
         border: 2px dashed #000;
         padding: 20px;
@@ -36,6 +36,8 @@
             font-weight: bold;
             margin-bottom: 8px;
             text-transform: uppercase;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
 
             @include mobile {
                 font-size: medium;
@@ -79,12 +81,14 @@
             justify-content: flex-start;
             align-items: center;
             margin: 10px 0;
+            flex-wrap: wrap;
 
             .tag {
                 padding: 6px 10px;
                 background: gray;
                 border-radius: 6px;
                 margin-right: 6px;
+                margin-bottom: 6px;
             }
         }
 
