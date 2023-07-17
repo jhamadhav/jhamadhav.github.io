@@ -1,0 +1,50 @@
+#skills {
+    .section-holder {
+        width: 70%;
+
+        @include mobile {
+            width: 85%;
+            margin-left: 30px;
+        }
+    }
+
+    .skill-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        hr {
+            height: 200px;
+            background: #000;
+            width: 1px;
+            border-style: dashed;
+            margin: 0 15px 0 4px;
+
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    h2 {
+        font-size: x-large;
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 12px;
+    }
+
+    ol {
+        padding-left: 30px;
+    }
+
+    li {
+        margin-bottom: 4px;
+        font-size: large;
+    }
+
+}
