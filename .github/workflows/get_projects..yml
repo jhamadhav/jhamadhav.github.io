@@ -1,4 +1,4 @@
-name: Update leaderBoard data
+name: Fetch Projects
 on:
   schedule:
     # Runs at midnight everyday
@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
       - name: install puppeteer libraries
       - run: |
           sudo apt-get update
           sudo apt-get install -y libgbm1
+      - uses: actions/checkout@v2
       - name: Setup node 12
         uses: actions/setup-node@v2
         with:
