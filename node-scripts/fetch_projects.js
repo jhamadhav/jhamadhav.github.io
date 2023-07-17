@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import puppeteer from 'puppeteer'
 
 const fetch_projects = async () => {
-    let res = await fetch("https://api.github.com/users/jhamadhav/repos")
+    let res = await fetch("https://api.github.com/users/jhamadhav/repos?per_page=100")
     res = await res.json()
     // console.log(res)
 
