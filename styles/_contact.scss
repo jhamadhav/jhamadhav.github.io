@@ -1,0 +1,24 @@
+#contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        padding: 10px 20px;
+        font-size: large;
+        border: 2px dashed #000;
+        margin: 40px;
+    }
+
+    p {
+        margin-top: 40px;
+        width: 40%;
+        line-height: 24px;
+
+        @include nav-mobile {
+            width: 80%;
+        }
+    }
+}
