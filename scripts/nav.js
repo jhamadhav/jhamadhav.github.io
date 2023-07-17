@@ -4,8 +4,15 @@ var now;
 
 //event listener when scrolled
 window.onscroll = function () {
-    now = window.pageYOffset;
+    now = window.scrollY;
     var btn = document.getElementsByTagName("nav")[0];
+
+    if (now <= 60) {
+        btn.style.background = "#0a192f"
+    } else {
+        btn.style.background = "rgba(239, 239, 239, 0.2)"
+    }
+
     if (now > 70) {
         if (now - prev < 0) {
             btn.style.transform = "translateY(0)";
