@@ -6,6 +6,12 @@
     }
 }
 
+@mixin nav-mobile {
+    @media (max-width : #{$nav-mobile}) {
+        @content;
+    }
+}
+
 @mixin small {
     @media (max-width : 300px) {
         @content;
@@ -15,7 +21,7 @@
 nav {
     height: 60px;
     width: 100vw;
-    background-color: $nav-color;
+    background-color: $bg-color;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,9 +31,11 @@ nav {
     transition-duration: 300ms;
     z-index: 50;
     font-family: 'Montserrat', sans-serif;
+    padding-right: 45px;
 
-    @include mobile {
+    @include nav-mobile {
         justify-content: flex-start;
+        padding-right: 0;
     }
 
     a:hover {
@@ -36,36 +44,28 @@ nav {
 
 
     #nav-h {
-        #logo {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-            outline: none;
-
-            &:active {
-                transform: scale(.9);
-            }
-        }
-
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        font-size: 1.2rem;
-        text-transform: uppercase;
+        font-size: xx-large;
         letter-spacing: 3px;
-        color: $text-color1;
-        margin-left: 30px;
+        color: $nav-text-color;
+        margin-left: 36px;
         z-index: 50;
         background-color: transparent;
+        font-family: 'Lobster Two',
+            cursive;
+        margin-top: -5px;
 
         a {
             text-decoration: none;
-            color: $text-color1;
+            color: $nav-text-color;
         }
 
-        @include mobile {
+        @include nav-mobile {
             margin: 0;
+            margin-left: 20px;
             letter-spacing: 2px;
         }
 
@@ -86,7 +86,7 @@ nav {
     margin-right: 10px;
     z-index: 50;
 
-    @include mobile {
+    @include nav-mobile {
         display: block;
     }
 
@@ -96,7 +96,7 @@ nav {
         height: 4px;
         width: 40px;
         margin: 6px;
-        background-color: $text-color1;
+        background-color: $nav-text-color;
         transition-duration: 300ms;
     }
 }
@@ -105,24 +105,23 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 480px;
 
-    @include mobile {
+    @include nav-mobile {
         display: fixed;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         position: absolute;
-        background: $violet-gradient;
+        background: $bg-color;
         width: 100vw;
-        max-width: 400px;
+        // max-width: 400px;
         height: calc(100vh - 60px);
         max-height: 700px;
         top: 60px;
         transition: 400ms;
         transform-origin: 0 0;
         transform: translate(-100%);
-        border-top: 2px solid #fff;
+        border-top: 2px solid $nav-text-color;
     }
 
     a {
@@ -134,20 +133,21 @@ nav {
         list-style: none;
         text-decoration: none;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         font-size: medium;
-        border-bottom: 3px solid transparent;
-        padding: 10px;
-        margin: 8px;
+        border-bottom: 2px solid transparent;
+        padding: 8px 4px;
+        margin: 12px 6px;
         cursor: pointer;
-        color: white;
+        color: $nav-text-color;
         outline: none;
+        text-align: center;
 
         &:hover {
-            color: $bg2;
+            border-bottom: 2px solid $nav-text-color;
         }
 
-        @include mobile {
+        @include nav-mobile {
             padding: 10px;
             width: 100%;
             text-align: center;

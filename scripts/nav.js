@@ -4,8 +4,9 @@ var now;
 
 //event listener when scrolled
 window.onscroll = function () {
-    now = window.pageYOffset;
+    now = window.scrollY;
     var btn = document.getElementsByTagName("nav")[0];
+
     if (now > 70) {
         if (now - prev < 0) {
             btn.style.transform = "translateY(0)";
@@ -16,6 +17,8 @@ window.onscroll = function () {
                 menuOpen()
             }
         }
+    } else {
+        btn.style.transform = "translateY(0)";
     }
     prev = window.pageYOffset;
 };
