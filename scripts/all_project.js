@@ -25,7 +25,9 @@ function filter_by_input(inp) {
             continue
         }
 
-        if (all_project_data[i]["tags"].includes(inp) == false) {
+        let tags = all_project_data[i]["tags"].toString()
+        let title = all_project_data[i]["name"]
+        if (tags.includes(inp) == false && title.includes(inp) == false) {
             project_cards[i].style.display = "none";
         } else {
             project_cards[i].style.display = "block";
