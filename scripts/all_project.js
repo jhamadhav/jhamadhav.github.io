@@ -1,6 +1,9 @@
+let project_count_span;
 window.onload = () => {
     makeProjects()
 
+    project_count_span = document.getElementById("project-count")
+    project_count_span.innerText = all_project_data.length
 
     let inpBar = document.getElementById("searchProjects")
 
@@ -19,6 +22,8 @@ window.onload = () => {
 function filter_by_input(inp) {
     document.getElementById("searchProjects").value = inp
     let project_cards = document.getElementsByClassName("project-card")
+
+    let cnt = all_project_data.length;
     for (let i = 0; i < all_project_data.length; ++i) {
         if (inp.length == 0) {
             project_cards[i].style.display = "block";
@@ -29,8 +34,10 @@ function filter_by_input(inp) {
         let title = all_project_data[i]["name"]
         if (tags.includes(inp) == false && title.includes(inp) == false) {
             project_cards[i].style.display = "none";
+            cnt--;
         } else {
             project_cards[i].style.display = "block";
         }
     }
+    project_count_span.innerText = cnt
 }
