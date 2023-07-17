@@ -54,7 +54,7 @@ const get_image = async (website_urls) => {
         await delay(2 * 1000)
         res[i]["image-link"] = `./images/project-image/${website_urls[i]["name"]}.jpg`
         await page.screenshot({
-            path: res[i]["image-link"]
+            path: `../images/project-image/${website_urls[i]["name"]}.jpg`
         })
     }
     await browser.close();
@@ -63,7 +63,7 @@ const get_image = async (website_urls) => {
 const write_to_file = (data) => {
     console.log(data);
 
-    var file = fs.createWriteStream('project.json.js');
+    var file = fs.createWriteStream('../project.json.js');
     file.on('error', function (err) { /* error handling */ });
     file.write("let all_project_data = [")
     for (let i = 0; i < data.length; ++i) {

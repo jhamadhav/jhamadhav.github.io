@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: 16.x
       - run: |
+          cd node-scripts
           npm install
           npm run fetch_projects
       - name: Commit and push changes

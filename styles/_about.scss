@@ -32,7 +32,7 @@ $profile-pic-width-mobile: 250px;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Montserrat', sans-serif;
 
             @include nav-mobile {
                 margin-top: 60px;
@@ -57,7 +57,6 @@ $profile-pic-width-mobile: 250px;
 
             .description {
                 font-size: medium;
-                font-family: 'Montserrat', sans-serif;
                 width: 90%;
                 line-height: 24px;
 
