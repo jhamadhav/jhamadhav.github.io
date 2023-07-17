@@ -46,14 +46,10 @@
         .project-name {
             font-size: x-large;
             font-weight: bold;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             text-transform: uppercase;
             text-overflow: ellipsis;
             overflow-x: hidden;
-
-            @include mobile {
-                font-size: large;
-            }
         }
 
         .links {
