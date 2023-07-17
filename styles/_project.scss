@@ -1,0 +1,95 @@
+#project-div {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    @include nav-mobile {
+        justify-content: center;
+    }
+}
+
+
+#projects {
+
+    .project-card {
+        width: 45%;
+        max-width: 400px;
+        border: 2px dashed #000;
+        padding: 20px;
+        border-radius: 4px;
+
+        @include nav-mobile {
+            width: 60%;
+        }
+
+        @include mobile {
+            width: 98%;
+        }
+
+        .project-name {
+            font-size: x-large;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+
+            @include mobile {
+                font-size: medium;
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px 0;
+
+            a {
+                text-decoration: none;
+            }
+
+            img {
+                margin: 0 6px;
+                width: 24px;
+
+                &:hover {
+                    transform: scale(.9);
+                }
+
+                &:active {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .description {
+            font-size: medium;
+            text-align: justify;
+        }
+
+        .tags {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px 0;
+
+            .tag {
+                padding: 6px 10px;
+                background: gray;
+                border-radius: 6px;
+                margin-right: 6px;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
