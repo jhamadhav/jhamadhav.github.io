@@ -16,9 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install puppeteer libraries
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libgbm1
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y libgbm1
       - name: Setup node 12
         uses: actions/setup-node@v2
         with:
