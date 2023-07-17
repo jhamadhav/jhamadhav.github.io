@@ -18,3 +18,44 @@
  .blur {
      filter: blur(3px);
  }
+
+ @mixin mobile {
+     @media (max-width : #{$mobile}) {
+         @content;
+     }
+ }
+
+ .social-handle-bar {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     position: fixed;
+     bottom: 0;
+     left: 40px;
+
+     @include mobile {
+         display: none;
+     }
+
+     hr {
+         height: 100px;
+         width: 2px;
+         background: #000;
+     }
+
+     a {
+         text-decoration: none;
+         margin-bottom: 20px;
+         transition-duration: 100ms;
+
+         &:hover {
+             transform: translateY(-4px);
+         }
+     }
+
+     i {
+         color: $nav-text-color;
+         font-size: x-large;
+     }
+ }

@@ -8,7 +8,7 @@ window.onscroll = function () {
     var btn = document.getElementsByTagName("nav")[0];
 
     if (now <= 60) {
-        btn.style.background = "#0a192f"
+        btn.style.background = "#efefef"
     } else {
         btn.style.background = "rgba(239, 239, 239, 0.2)"
     }
