@@ -1,4 +1,4 @@
- @import './nav', './about';
+ @import './nav', './about', './education';
 
  //  font-family: 'Lobster Two', cursive;
  //  font-family: 'Montserrat', sans-serif;
@@ -8,6 +8,10 @@
      padding: 0;
      box-sizing: border-box;
      //  overflow-x: hidden;
+ }
+
+ html {
+     overflow-x: hidden;
  }
 
  body {
