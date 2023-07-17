@@ -4,7 +4,7 @@ const makeProjects = () => {
     let res = ""
     for (let i = 0; i < all_project_data.length; ++i) {
         let elem = all_project_data[i]
-        console.log(elem);
+        // console.log(elem);
         res += `
             <div class="project-card">
                 <div class="project-name">

@@ -4,11 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Madhav Jha | Portfolio</title>
+
+
+    <!-- Android  -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="My personal website | porfolio">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Tap highlighting  -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- UC Mobile Browser  -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+
+    <!-- Layout mode -->
+    <meta name="layoutmode" content="standard">
+
+    <!-- image mode - show image even in text only mode  -->
+    <meta name="imagemode" content="force">
+
+    <!-- Orientation  -->
+    <meta name="screen-orientation" content="portrait">
+
+    <!-- fb and whatsapp  -->
+    <meta name="msapplication-TileImage" content="https://jhamadhav.com/images/profilePic.jpg">
+
+    <!-- Site Name, Title, and Description to be displayed -->
+    <meta property="og:site_name" content="content=" Madhav Jha | Porfolio"">
+
+    <!-- Image to display -->
+    <meta property="og:image" content="https://jhamadhav.com/images/profilePic.jpg">
+
+    <!-- No need to change anything here -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg">
+
+    <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <!-- Website to visit when clicked in fb or WhatsApp-->
+    <meta property="og:url" content="https://jhamadhav.com">
+
+    <!-- Manifest.json  -->
+    <meta property="og:title" content="Madhav Jha | Porfolio">
+    <meta property="og:description" content="My personal website | porfolio">
+    <meta property="og:image" itemprop="image" content="https://jhamadhav.com/images/profilePic.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jhamadhav.com">
+
+    <!-- Main Link Tags  -->
+    <link href="https://jhamadhav.com/images/profilePic.jpg" rel="icon" type="image/png" sizes="16x16">
+    <link href="https://jhamadhav.com/images/profilePic.jpg" rel="icon" type="image/png" sizes="32x32">
+
+    <!-- iOS  -->
+    <link href="./images/profilePic.jpg" rel="apple-touch-icon" sizes="152x152">
+
+    <!-- Android  -->
+    <link href="./images/profilePic.jpg" rel="icon" sizes="192x192">
+    <link href="./images/profilePic.jpg" rel="icon" sizes="512x512">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Montserrat&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f408aa718a.js" crossorigin="anonymous"></script>
+
+    <!-- style and scripts -->
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <script src="./scripts/swipe.js"></script>
+    <script src="./scripts/nav.js"></script>
+    <script src="./project.json.js"></script>
+    <script src="./scripts/make-projects.js"></script>
+    <script src="./scripts/all_project.js"></script>
 </head>
 
-<body>
-    hola
+<body id="home">
+    <!-- navBar -->
+    <nav>
+        <div class="burger" onclick="menuOpen()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="nav-h">
+            <a href="https://jhamadhav.com">jhamadhav.</a>
+        </div>
+
+
+        <ul class="nav-links">
+            <a href="./index.html">
+                <li>Home</li>
+            </a>
+        </ul>
+    </nav>
+
+    <!-- left social handle bar -->
+    <div class="social-handle-bar">
+        <a href="mailto:contact@jhamadhav.com" target="_blank">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="https://dev.to/jhamadhav" target="_blank">
+            <i class="fa-brands fa-dev"></i>
+        </a>
+        <a href="https://github.com/jhamadhav" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jhamadhav/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <hr>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="section">
+        <div class="section-holder">
+            <div class="section-heading">
+                Projects
+            </div>
+        </div>
+
+        <div id="project-div">
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        © 2023 - 2024 Madhav Jha. All Right Reserved.
+    </footer>
 </body>
 
 </html>
