@@ -7,9 +7,11 @@
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 50px;
+    padding-left: 7%;
 
     @include nav-mobile {
         justify-content: center;
+        padding: 0;
     }
 }
 
