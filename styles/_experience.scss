@@ -1,0 +1,42 @@
+#experience {
+    .exp-card {
+        width: 85%;
+        margin: 40px 20px;
+        line-height: 22px;
+        border: 2px dashed #000;
+        padding: 20px 30px;
+        border-radius: 6px;
+
+        @include mobile {
+            width: 90%;
+            margin-left: 10px;
+        }
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        @include nav-mobile {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+
+    .company-name {
+        font-size: x-large;
+    }
+
+    .description {
+        margin-top: 10px;
+        text-align: left;
+
+        br {
+            margin-bottom: 5px;
+        }
+    }
+}

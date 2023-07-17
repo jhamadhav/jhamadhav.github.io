@@ -7,15 +7,16 @@
     }
 }
 
-#education {
+.section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
 
-    .education-holder {
+    .section-holder {
         width: 70%;
         align-items: flex-start;
 
@@ -23,9 +24,11 @@
             width: 95%;
         }
     }
+}
 
+#education {
     .edu-card {
-        width: 90%;
+        width: 85%;
         margin: 40px 20px;
         line-height: 24px;
         border: 2px dashed #000;
