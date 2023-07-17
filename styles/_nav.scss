@@ -31,10 +31,11 @@ nav {
     transition-duration: 300ms;
     z-index: 50;
     font-family: 'Montserrat', sans-serif;
-    padding-right: 25px;
+    padding-right: 45px;
 
     @include nav-mobile {
         justify-content: flex-start;
+        padding-right: 0;
     }
 
     a:hover {
@@ -49,8 +50,8 @@ nav {
         align-items: center;
         font-size: xx-large;
         letter-spacing: 3px;
-        color: $text-color1;
-        margin-left: 30px;
+        color: $nav-text-color;
+        margin-left: 36px;
         z-index: 50;
         background-color: transparent;
         font-family: 'Lobster Two',
@@ -59,11 +60,12 @@ nav {
 
         a {
             text-decoration: none;
-            color: $text-color1;
+            color: $nav-text-color;
         }
 
         @include nav-mobile {
             margin: 0;
+            margin-left: 20px;
             letter-spacing: 2px;
         }
 
@@ -94,7 +96,7 @@ nav {
         height: 4px;
         width: 40px;
         margin: 6px;
-        background-color: $text-color1;
+        background-color: $nav-text-color;
         transition-duration: 300ms;
     }
 }
@@ -112,14 +114,14 @@ nav {
         position: absolute;
         background: $bg-color;
         width: 100vw;
-        max-width: 400px;
+        // max-width: 400px;
         height: calc(100vh - 60px);
         max-height: 700px;
         top: 60px;
         transition: 400ms;
         transform-origin: 0 0;
         transform: translate(-100%);
-        border-top: 2px solid #fff;
+        border-top: 2px solid $nav-text-color;
     }
 
     a {
@@ -134,15 +136,15 @@ nav {
         letter-spacing: 3px;
         font-size: small;
         border-bottom: 2px solid transparent;
-        padding: 9px 4px;
-        margin: 8px 6px;
+        padding: 8px 4px;
+        margin: 12px 6px;
         cursor: pointer;
-        color: white;
+        color: $nav-text-color;
         outline: none;
         text-align: center;
 
         &:hover {
-            border-bottom: 2px solid #fff;
+            border-bottom: 2px solid $nav-text-color;
         }
 
         @include nav-mobile {
@@ -157,7 +159,7 @@ nav {
 }
 
 #resume-nav {
-    border: 2px solid #fff;
+    border: 2px solid $nav-text-color;
     border-radius: 8px;
     margin-left: 10px;
 
