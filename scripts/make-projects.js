@@ -30,7 +30,9 @@ const makeProjects = () => {
                 <div class="tags">
         `
         for (let j = 0; j < elem["tags"].length; ++j) {
-            res += `<div class="tag">${elem["tags"][j]}</div>`
+            res += `<div class="tag" onclick="filter_by_input('${elem["tags"][j]}')">
+            ${elem["tags"][j]}
+            </div>`
         }
         res += `
         </div>

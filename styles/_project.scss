@@ -30,6 +30,7 @@
         padding: 20px;
         border-radius: 4px;
         height: 500px;
+        overflow-y: hidden;
 
         @include nav-mobile {
             width: 60%;
@@ -97,6 +98,15 @@
                 border-radius: 6px;
                 margin-right: 6px;
                 margin-bottom: 6px;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(.9);
+                }
+
+                &:active {
+                    transform: scale(1.1);
+                }
             }
         }
 

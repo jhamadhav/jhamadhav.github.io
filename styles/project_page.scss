@@ -1,0 +1,77 @@
+@import './nav', './about', './education', './experience', './project', './contact', './search';
+
+//  font-family: 'Lobster Two', cursive;
+//  font-family: 'Montserrat', sans-serif;
+//  font-family: 'Roboto', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //  overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $bg-color;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+@mixin nav-mobile {
+    @media (max-width : #{$nav-mobile}) {
+        @content;
+    }
+}
+
+.social-handle-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+
+    @include nav-mobile {
+        display: none;
+    }
+
+    hr {
+        height: 200px;
+        width: 2px;
+        background: #000;
+    }
+
+    a {
+        text-decoration: none;
+        margin-bottom: 20px;
+        transition-duration: 100ms;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+
+    i {
+        color: $nav-text-color;
+        font-size: x-large;
+    }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-heading {
+    width: 100%;
+    text-align: center;
+}

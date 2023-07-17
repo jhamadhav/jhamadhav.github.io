@@ -18,3 +18,7 @@ window.onload = () => {
     // console.log(all_project_data);
     makeProjects()
 }
+
+function filter_by_input(inp) {
+    console.log("Move to all projects for this to work");
+}
