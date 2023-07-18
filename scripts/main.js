@@ -20,5 +20,6 @@ window.onload = () => {
 }
 
 function filter_by_input(inp) {
-    console.log("Move to all projects for this to work");
+    // console.log("Move to all projects for this to work");
+    window.location = `/all-project.html?search_by_tag=${inp}`
 }
