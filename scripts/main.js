@@ -9,9 +9,12 @@ window.onload = () => {
         "2048"
     ]
     let data = []
-    for (let i = 0; i < all_project_data.length; ++i) {
-        if (pinned_project_name.includes(all_project_data[i]["name"])) {
-            data.push(all_project_data[i])
+    for (let i = 0; i < pinned_project_name.length; ++i) {
+        for (let j = 0; j < all_project_data.length; ++j) {
+            if (all_project_data[j]["name"] == pinned_project_name[i]) {
+                data.push(all_project_data[j])
+                break;
+            }
         }
     }
     all_project_data = data;
