@@ -5,13 +5,15 @@ window.onload = () => {
     // get tag searched from params
     var url_string = window.location
     var url = new URL(url_string);
-    var url_inp = url.searchParams.get("search_by_tag");
+    var url_inp = url.searchParams.get("search_by_tag")
     // console.log(url_inp);
 
     project_count_span = document.getElementById("project-count")
     project_count_span.innerText = all_project_data.length
 
-    filter_by_input(url_inp)
+    if (url_inp != null) {
+        filter_by_input(url_inp)
+    }
 
     let inpBar = document.getElementById("searchProjects")
 
