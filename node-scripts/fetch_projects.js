@@ -54,7 +54,7 @@ const get_image = async (website_urls) => {
         await delay(2 * 1000)
         if (website_url.includes("jhamadhav.com") == false) {
             console.log(`${website_url}: additional wait`);
-            await delay(8 * 1000)
+            await delay(12 * 1000)
         }
         res[i]["image-link"] = `./images/project-image/${website_urls[i]["name"]}.jpg`
         await page.screenshot({
